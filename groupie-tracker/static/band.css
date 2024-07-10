@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(3, 7, 30);
+    background: linear-gradient(0deg, rgba(3, 7, 30, 1) 0%, rgba(55, 6, 23, 1) 50%, rgba(106, 4, 15, 1) 100%);
+    min-height: 100vh;
+}
+
+
+.Cover {
+    padding-top: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.Premier-album {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFCB48;
+}
+
+.Date-de-creation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#FFCB48;
+    padding-top: 15px;
+}
+
+.Membres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#FFCB48;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.Relation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#FFCB48;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3564E6;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+h2 {
+    padding-top: 0.25%;
+    color: #3564E6;
+    font-size: x-large;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h3 {
+    padding-top: 0.5%;
+    color: #FFCB48;
+    font-size: large;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h4 {
+    padding-top: 0.5%;
+    color: #FFCB48;
+    font-size: medium;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

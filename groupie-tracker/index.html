@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupie Tracker</title>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="titre">
+            <h1>Groupie Tracker</h1>
+            <h1>Groupie Tracker</h1>
+        </div>
+        <div class="logo">
+            <img src="https://s6.gifyu.com/images/S4JY3.gif">
+        </div>
+    </div>
+    <main class="content">  
+        {{range .}}
+        <div class="groupe">
+                <img class="image" src={{.Image}}>
+                <div class="contenu">
+                    <div class="wikiartist">
+                        <label class="nom-groupe">{{.Name}}</label>
+                        <label class="text-test">{{range $m := .Members}}</label>
+                        <pre class="groupe-membres">{{$m}}</pre>
+                        {{end}}
+                        <form method="GET" action="/band/">
+                            <div class="ouais">
+                                <button type="submit">{{.Name}}</button>
+                                <input type="hidden" name="ID" value={{.ID}}>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{end}}
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="../static/band.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>{{.Name}}</title>
+</head>
+
+<body>
+    <header>{{.Name}}</header>
+    <div class="Cover">
+        <img src={{.Image}} height="300" width="300">
+    </div>
+    <div class="Premier-album">
+        <h2>Premier album : </h2>
+        <h3>{{.FirstAlbum}}</h3>
+    </div>
+    <div class="Date-de-creation">
+        <h2>Date de création : </h2>
+        <h3>{{.CreationDate}}</h3>
+    </div>
+    <div class="Membres">
+        <h2>Membres : </h2>
+        <h3>{{range $m := .Members}}
+        <div>{{$m}}</div>
+        {{end}} </h3>
+    </div>
+
+    <div class="Relation">
+        <h2>Concert, Localisation et Dates : </h2>
+        <h4>{{range $m := .RelationA}}
+        <div>{{$m}}</div>
+        {{end}} </h4>
+    </div>
+</body>
+
+</html>
